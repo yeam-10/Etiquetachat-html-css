@@ -1,0 +1,60 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        width: 600px;
+    }
+    
+    h2 {
+        width: 600px;
+        color: black;
+    }
+    
+    .card {
+        /*Agregando shadows */
+        display: flex;
+        border-bottom: 1px solid transparent;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        transition: 0.3s;
+        position: fixed;
+        top: 755px;
+        right: 0;
+        width: 325px;
+        height: 60px;
+    }
+    
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    }
+    
+    .container {
+        padding: 10px 20px;
+        border-radius: 12px;
+        margin-right: 10px;
+        background-color: hsl(0, 0%, 70%);
+    }
+    
+    @media screen and (max-width:1024px) {
+        .card {
+            top: 930px;
+            position: fixed;
+        }
+    }
+    
+    @media screen and (max-width:800px) {
+        .card {
+            top: 715px;
+            position: fixed;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        .card {
+            top: 560px;
+            position: fixed;
+        }
+    }
