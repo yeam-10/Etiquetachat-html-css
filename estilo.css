@@ -1,16 +1,13 @@
     * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
     
     body {
         font-family: 'Roboto', sans-serif;
         width: 600px;
-    }
-    
-    h2 {
-        width: 600px;
-        color: black;
+        /*color: #fff;*/
     }
     
     .card {
@@ -22,9 +19,15 @@
         transition: 0.3s;
         position: fixed;
         top: 755px;
+        /*align-self: flex-end;
+        align-items: flex-end;
+        justify-content: flex-end;*/
         right: 0;
         width: 325px;
         height: 60px;
+        margin-right: 12px;
+        /* background-color: rgb(106, 194, 84);*/
+        background-color: rgba(34, 33, 33, 0.1);
     }
     
     .card:hover {
@@ -34,27 +37,30 @@
     .container {
         padding: 10px 20px;
         border-radius: 12px;
-        margin-right: 10px;
-        background-color: hsl(0, 0%, 70%);
+        margin-right: 12px;
+        background-color: rgba(100, 93, 93, 0.1);
     }
     
-    @media screen and (max-width:1024px) {
+    @media only screen and (max-device-width: 667px) and (min-device-width: 375px) {
         .card {
-            top: 930px;
-            position: fixed;
+            top: 620px;
         }
     }
     
-    @media screen and (max-width:800px) {
+    @media only screen and (max-device-width: 740px) and (min-device-width: 340px) {
         .card {
-            top: 715px;
-            position: fixed;
+            top: 670px;
         }
     }
     
-    @media screen and (max-width:600px) {
+    @media only screen and (max-device-width: 812px) and (min-device-width: 375px) {
         .card {
-            top: 560px;
-            position: fixed;
+            top: 720px;
+        }
+    }
+    
+    @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) {
+        .card {
+            top: 945px;
         }
     }
